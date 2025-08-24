@@ -1,12 +1,4 @@
-# Real-Time AI Tutor — Sketchpad
 
-A product-ready **proof‑of‑concept** that teaches in real time using a collaborative sketchpad. The AI tutor chats with the learner and **sketches step‑by‑step** on a shared canvas, synchronized with its explanation.
-
-> **Timebox assumed:** ~36 hours (within the requested “24–48 hours”).
-
-https://github.com/yourname/ai-tutor-sketchpad (put your repo here after pushing)
-
----
 
 ## ✨ Features
 
@@ -139,14 +131,6 @@ ai-tutor-sketchpad/
 
 - “Explain the **Pythagorean theorem** with a diagram.” ✅ (triggers sketch)
 - Ask anything else; the tutor will suggest the Pythagorean demo.
-
----
-
-## 🔒 Assumptions
-
-- Timebox 36 hours for design, build, and polish.
-- No external API keys required for the core demo.
-- Browser supports Web Speech API (voice is optional and can be toggled).
 
 ---
 
