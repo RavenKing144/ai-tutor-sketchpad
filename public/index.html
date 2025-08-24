@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real-Time AI Tutor — Sketchpad</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Real-Time AI Tutor <span class="muted">— Sketchpad</span></h1>
+    </header>
+
+    <main class="grid">
+      <section class="chat">
+        <div id="chatLog" class="chat-log"></div>
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" placeholder="Ask me something… (e.g., 'Explain the Pythagorean theorem')" />
+          <button type="submit">Send</button>
+          <button type="button" id="demoBtn" class="ghost">Demo Prompt</button>
+        </form>
+        <div class="voice">
+          <label><input type="checkbox" id="voiceToggle" checked /> Speak responses</label>
+        </div>
+      </section>
+
+      <section class="board">
+        <div class="toolbar">
+          <label>Color <input type="color" id="colorPicker" value="#222222"></label>
+          <label>Width <input type="range" id="widthPicker" min="1" max="12" value="3"></label>
+          <button id="clearBtn">Clear</button>
+          <button id="saveBtn">Save PNG</button>
+          <span class="muted tip">Use mouse/touch to draw; AI will sketch too.</span>
+        </div>
+        <canvas id="pad" width="800" height="500"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <span>Built as a product-ready POC. Run locally with <code>uvicorn main:app --reload</code></span>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
