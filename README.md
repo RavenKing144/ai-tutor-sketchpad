@@ -134,12 +134,6 @@ ai-tutor-sketchpad/
 
 ---
 
-## 📸 Screenshots / Video (optional)
-
-- Include short 30–120s screen recording of the interaction when you publish the repo.
-
----
-
 ## 📝 License
 
 MIT
