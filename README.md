@@ -46,7 +46,7 @@ uvicorn main:app --reload
 ## 🧱 Architecture & Design Choices
 
 ### High level
-```mermaid
+```
 flowchart LR
     U[User Browser] <-- WebSocket --> S[FastAPI Server]
     U -- Canvas events --> U
