@@ -6,6 +6,8 @@ services:
     environment:
       # Optional: pass an API key if you wire a real LLM
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GROQ_MODEL=${GROQ_MODEL:-llama-3.3-70b-versatile}
     ports:
-      - "8000:8000"
+      - "8061:8000"
     restart: unless-stopped
