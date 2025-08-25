@@ -14,8 +14,10 @@
   const saveBtn = document.getElementById('saveBtn');
 
   // --- WebSocket connection ---
-  let protocol = (location.protocol === 'https:') ? 'wss' : 'ws';
-  const ws = new WebSocket(`${protocol}://${location.host}/ws`);
+let protocol = (location.protocol === 'https:') ? 'wss' : 'ws';
+// Use current path as base, e.g. /ai_tutor  (strip trailing slash for consistency)
+const basePath = location.pathname.replace(/\/+$/, '');
+const ws = new WebSocket(`${protocol}://${location.host}${basePath}/ws`);
 
   ws.addEventListener('message', (evt) => {
     try {
